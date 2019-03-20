@@ -18,10 +18,25 @@ class UIBasicGeometricShapes: UIView {
     
     // Make an square, think that you have UIView in the class itself
     // What are the square properties
-    func square() -> UIBezierPath {
+    func square() {
         let bezierPath = UIBezierPath()
-        return bezierPath
+        // Specify the point that the path should start get drawn.
+        bezierPath.move(to: CGPoint(x: 0.0, y: 0.0))
+        
+        // Create a line between the starting point and the bottom-left side of the view.
+        bezierPath.addLine(to: CGPoint(x: 0.0, y: self.frame.size.height))
+        
+        // Create the bottom line (bottom-left to bottom-right).
+        bezierPath.addLine(to: CGPoint(x: self.frame.size.width, y: self.frame.size.height))
+        
+        // Create the vertical line from the bottom-right to the top-right side.
+        bezierPath.addLine(to: CGPoint(x: self.frame.size.width, y: 0.0))
+        
+        // Close the path. This will create the last line automatically.
+        bezierPath.close()
+//        return bezierPath
     }
+    
 
     // This is meant to be just the math to make this
     // What are the circle properties
@@ -30,9 +45,13 @@ class UIBasicGeometricShapes: UIView {
         return bezierPath
     }
     
-    func triangle() -> UIBezierPath {
+    func triangle() {
         let bezierPath = UIBezierPath()
-        return bezierPath
+        bezierPath.move(to: CGPoint(x: self.frame.width/2, y: 0.0))
+        bezierPath.addLine(to: CGPoint(x: 0.0, y: self.frame.size.height))
+        bezierPath.addLine(to: CGPoint(x: self.frame.size.width, y: self.frame.size.height))
+        bezierPath.close()
+//        return bezierPath
     }
     
     
@@ -45,8 +64,6 @@ class UIBasicGeometricShapes: UIView {
         let bezierPath = UIBezierPath()
         return bezierPath
     }
-    
-
     
     
 }
