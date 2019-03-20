@@ -21,6 +21,24 @@ class ViewController: UIViewController {
     // The first step is only the square and circle, this should be made on a couple
     // lines and from there stablish it easily on the frame
 
+    override func viewDidAppear(_ animated: Bool) {
+        //What exactly is this doing?
+        super.viewDidAppear(animated)
+        
+        let width: CGFloat = 240.0
+        let height: CGFloat = 160.0
+        
+        /* Here is setting up the size and position
+         * of the whole image, this happens because of the initializer
+         */
+        let demoView = UIBasicGeometricShapes(frame: CGRect(x: self.view.frame.size.width/2 - width/2,
+                                              y: self.view.frame.size.height/2 - height/2,
+                                              width: width,
+                                              height: height))
+        // Given that DemoView inherits from a UIView it can be used by the property addSubView
+        // view is part UIViewController
+        self.view.addSubview(demoView)
+    }
     
     // Second step 
 
