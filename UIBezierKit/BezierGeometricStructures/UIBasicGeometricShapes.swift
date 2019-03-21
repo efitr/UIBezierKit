@@ -18,6 +18,8 @@ class UIBasicGeometricShapes: UIView {
     
     // Make an square, think that you have UIView in the class itself
     // What are the square properties
+    
+    // What has to be passed here must be about sizing ...
     func square() {
         let bezierPath = UIBezierPath()
         // Specify the point that the path should start get drawn.
@@ -54,16 +56,5 @@ class UIBasicGeometricShapes: UIView {
 //        return bezierPath
     }
     
-    
-    ////////////////////////////////////////////////////////////////////////////
-    // Not PERFECT SHAPES
-    ////////////////////////////////////////////////////////////////////////////
-    
-    // Here you get 
-    func rectangle() -> UIBezierPath {
-        let bezierPath = UIBezierPath()
-        return bezierPath
-    }
-    
-    
+
 }
