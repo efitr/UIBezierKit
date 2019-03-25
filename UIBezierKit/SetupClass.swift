@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+
+// Here is meant to be the place where you construct the object and the initializer
+// with the boundaries element is made
