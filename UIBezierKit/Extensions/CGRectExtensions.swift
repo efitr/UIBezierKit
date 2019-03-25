@@ -6,12 +6,32 @@
 //  Copyright © 2019 App Solutions. All rights reserved.
 //
 
+/* Each class has features
+    * What functionality are both addind that make the CoreGraphis element work
+    * Do I need to have both been called here?
+*/
+
+// Why exactly is this needed?
 import CoreGraphics
+// Why exactly is this needed?
+import Darwin
+
+/* AMONG THE EXTENSIONS
+    * CGFloat, is what all the other CG features use to function
+    * CGPoint, is a point on the view, something can be worked
+      from it.
+    * CGRect, this is literally a rectangle, this has quite a lot of location
+      properties
+    * CGRectEdge, type UInt31,is a enum with this -> minXEdge, minYEdge, maxXEdge, maxYEdge
+    * CGVector, I don't really get what is this doing, how to do it? ... ???
+    * CGSize, this has a Height and Width
+ */
 
 extension CGRect {
     // This is about setting up a sort of grind on the frame, with the bounds ..., this is applied to bounds?
     // The elements made here are meant for ease of
     
+
 }
 
 
