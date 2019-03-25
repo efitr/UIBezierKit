@@ -6,7 +6,14 @@
 //  Copyright © 2019 App Solutions. All rights reserved.
 //
 
-import UIKit
+/* Each class has features
+ * What functionality are both addind that make the CoreGraphis element work
+ * Do I need to have both been called here?
+ */
+// Why exactly is this needed?
+import Foundation
+// Why exactly is this needed?
+import QuartzCore
 
 ////////////////////////////////////////////////////////////////////////////
 // Objective of this class:
@@ -16,7 +23,7 @@ import UIKit
 //
 ////////////////////////////////////////////////////////////////////////////
 
-class Properties: UIView {
+class Properties: CAShapeLayer {
 
     ////////////////////////////////////////////////////////////////////////////
     // This should make it easy to setup the properties
@@ -25,15 +32,5 @@ class Properties: UIView {
     // What are the properties:
     //  * The color
     
-    var path: UIBezierPath!
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        self.backgroundColor = UIColor.darkGray
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
+
 }
