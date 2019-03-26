@@ -15,11 +15,18 @@ class UIBezierGeometricPerfectStructures: UIBezierPath {
     
     // This is a non optional type? -> What does this mean?
     
-    let bezierPath = UIBezierPath()
+    var bezierPath: UIBezierPath!
+    
+    init(cgPath CGPath: CGPath) {
+        <#code#>
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
     /*
-     * This function should take in what? for it to work, the elements needed could be loadad
-     * using the
+     * This function should take in the position of the square
      */
     func square() {
         //        let bezierPath = UIBezierPath()
