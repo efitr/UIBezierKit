@@ -25,19 +25,26 @@ class ViewController: UIViewController {
         //What exactly is this doing?
         super.viewDidAppear(animated)
         
+        // This is about the shape size
         let width: CGFloat = 240.0
         let height: CGFloat = 160.0
         
         /* Here is setting up the size and position
          * of the whole image, this happens because of the initializer
          */
-        let demoView = UIBasicGeometricShapes(frame: CGRect(x: self.view.frame.size.width/2 - width/2,
-                                              y: self.view.frame.size.height/2 - height/2,
-                                              width: width,
-                                              height: height))
+        let basicGeometricShapes = UIBasicGeometricShapes(
+            frame: CGRect(
+            x:
+            /* This is framing */
+            self.view.frame.size.width/2 - width/2,
+            y:
+            
+            self.view.frame.size.height/2 - height/2,
+            width: width,
+            height: height))
         // Given that DemoView inherits from a UIView it can be used by the property addSubView
         // view is part UIViewController
-        self.view.addSubview(demoView)
+        self.view.addSubview(basicGeometricShapes)
     }
     
     // Second step 

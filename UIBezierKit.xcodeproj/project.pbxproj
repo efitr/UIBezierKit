@@ -13,6 +13,14 @@
 		EC00CC5F22427FD6008F8B62 /* UIBezierKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC00CC5D22427FD6008F8B62 /* UIBezierKit.xcdatamodeld */; };
 		EC00CC6122427FDA008F8B62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC00CC6022427FDA008F8B62 /* Assets.xcassets */; };
 		EC00CC6422427FDA008F8B62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC00CC6222427FDA008F8B62 /* LaunchScreen.storyboard */; };
+		EC00CC6E22430314008F8B62 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC00CC6D22430314008F8B62 /* Properties.swift */; };
+		EC2737A222486D30003FE794 /* UIBezierGeometricPerfectStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2737A122486D30003FE794 /* UIBezierGeometricPerfectStructures.swift */; };
+		EC2737A42248794E003FE794 /* SetupClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2737A32248794E003FE794 /* SetupClass.swift */; };
+		EC482A12224946D400AE6F1B /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC482A11224946D400AE6F1B /* UIViewControllerExtensions.swift */; };
+		EC5771C32249D53C00763238 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5771C22249D53C00763238 /* UIViewExtensions.swift */; };
+		EC8A2F1322440C5E0033AAE9 /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A2F1222440C5E0033AAE9 /* CGRectExtensions.swift */; };
+		ECEFAF70224B4E9A001099C2 /* UIBezierPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEFAF6F224B4E9A001099C2 /* UIBezierPathExtensions.swift */; };
+		ECEFAF72224B6104001099C2 /* CAShapeLayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEFAF71224B6104001099C2 /* CAShapeLayerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		EC00CC6022427FDA008F8B62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC00CC6322427FDA008F8B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC00CC6522427FDA008F8B62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC00CC6D22430314008F8B62 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		EC2737A122486D30003FE794 /* UIBezierGeometricPerfectStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierGeometricPerfectStructures.swift; sourceTree = "<group>"; };
+		EC2737A32248794E003FE794 /* SetupClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupClass.swift; sourceTree = "<group>"; };
+		EC482A11224946D400AE6F1B /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		EC5771C22249D53C00763238 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		EC8A2F1222440C5E0033AAE9 /* CGRectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtensions.swift; sourceTree = "<group>"; };
+		ECEFAF6F224B4E9A001099C2 /* UIBezierPathExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPathExtensions.swift; sourceTree = "<group>"; };
+		ECEFAF71224B6104001099C2 /* CAShapeLayerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAShapeLayerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,10 @@
 			children = (
 				EC00CC5622427FD6008F8B62 /* AppDelegate.swift */,
 				EC00CC5822427FD6008F8B62 /* ViewController.swift */,
+				EC2737A32248794E003FE794 /* SetupClass.swift */,
+				EC8A2F1422440C740033AAE9 /* Extensions */,
+				EC8A2F1022440B200033AAE9 /* BezierGeometricStructures */,
+				EC8A2F1122440BDC0033AAE9 /* StructuresProperties */,
 				EC00CC5A22427FD6008F8B62 /* Main.storyboard */,
 				EC00CC6022427FDA008F8B62 /* Assets.xcassets */,
 				EC00CC6222427FDA008F8B62 /* LaunchScreen.storyboard */,
@@ -65,6 +85,34 @@
 				EC00CC5D22427FD6008F8B62 /* UIBezierKit.xcdatamodeld */,
 			);
 			path = UIBezierKit;
+			sourceTree = "<group>";
+		};
+		EC8A2F1022440B200033AAE9 /* BezierGeometricStructures */ = {
+			isa = PBXGroup;
+			children = (
+				EC2737A122486D30003FE794 /* UIBezierGeometricPerfectStructures.swift */,
+			);
+			path = BezierGeometricStructures;
+			sourceTree = "<group>";
+		};
+		EC8A2F1122440BDC0033AAE9 /* StructuresProperties */ = {
+			isa = PBXGroup;
+			children = (
+				EC00CC6D22430314008F8B62 /* Properties.swift */,
+			);
+			path = StructuresProperties;
+			sourceTree = "<group>";
+		};
+		EC8A2F1422440C740033AAE9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC8A2F1222440C5E0033AAE9 /* CGRectExtensions.swift */,
+				EC482A11224946D400AE6F1B /* UIViewControllerExtensions.swift */,
+				EC5771C22249D53C00763238 /* UIViewExtensions.swift */,
+				ECEFAF71224B6104001099C2 /* CAShapeLayerExtensions.swift */,
+				ECEFAF6F224B4E9A001099C2 /* UIBezierPathExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +186,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECEFAF72224B6104001099C2 /* CAShapeLayerExtensions.swift in Sources */,
+				EC5771C32249D53C00763238 /* UIViewExtensions.swift in Sources */,
+				ECEFAF70224B4E9A001099C2 /* UIBezierPathExtensions.swift in Sources */,
 				EC00CC5F22427FD6008F8B62 /* UIBezierKit.xcdatamodeld in Sources */,
 				EC00CC5922427FD6008F8B62 /* ViewController.swift in Sources */,
+				EC482A12224946D400AE6F1B /* UIViewControllerExtensions.swift in Sources */,
+				EC8A2F1322440C5E0033AAE9 /* CGRectExtensions.swift in Sources */,
+				EC00CC6E22430314008F8B62 /* Properties.swift in Sources */,
 				EC00CC5722427FD6008F8B62 /* AppDelegate.swift in Sources */,
+				EC2737A42248794E003FE794 /* SetupClass.swift in Sources */,
+				EC2737A222486D30003FE794 /* UIBezierGeometricPerfectStructures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
