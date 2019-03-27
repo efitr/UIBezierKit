@@ -17,6 +17,9 @@ class UIBezierGeometricPerfectStructures: UIBezierPath {
     
     var bezierPath: UIBezierPath!
     
+    
+    
+    // Here I have to make it be so that the shape size has to be instantiated
     init(cgPath CGPath: CGPath) {
         <#code#>
     }
@@ -52,5 +55,13 @@ class UIBezierGeometricPerfectStructures: UIBezierPath {
         
         bezierPath.close()
         //        return bezierPath
+    }
+    
+    func triangle() {
+        let bezierPath = UIBezierPath()
+//        bezierPath.move(to: CGPoint(x: UInt32, y: UInt32))
+//        bezierPath.addLine(to: CGPoint(x: 0.0, y: self.frame.size.height))
+//        bezierPath.addLine(to: CGPoint(x: self.frame.size.width, y: self.frame.size.height))
+        bezierPath.close()
     }
 }
